@@ -2,7 +2,6 @@ const http = require('http');
 const { PKPass } = require('passkit-generator');
 const fs = require('fs');
 
-
 function hexToRgb(hex) {
     hex = hex.replace(/^#/, '');
     let bigint = parseInt(hex, 16);
@@ -79,7 +78,7 @@ const server = http.createServer(async (request, response) => {
 
                     console.log('Pass was generated successfully');
                     response.writeHead(200, { 'Content-Type': 'application/json' });
-                    response.end(JSON.stringify({"pass has been generated"}));
+                    response.end(JSON.stringify({}));
                 } catch (error) {
                     console.error('Error generating pass:', error);
                     response.writeHead(500, { 'Content-Type': 'application/json' });
