@@ -38,9 +38,16 @@ const server = http.createServer(async (request, response) => {
                         serialNumber: 'PASS-213213',
                         description: 'Palace',
                         logoText: 'Palace Cinemas',
+                        barcode: { 
+                            "message" : "Your barcode message or value here",
+                            "format" : "PKBarcodeFormatQR",
+                            "messageEncoding" : "iso-8859-1",
+                            "backgroundColor": "rgb(255, 255, 255)"
+                        },
                         logoTextColor: hexToRgb('#' + passData.logoTextColor),
                         foregroundColor: hexToRgb('#' + passData.textColor),
                         backgroundColor: hexToRgb('#' + passData.backgroundColor),
+                        //barcode: passData.barcode
                     });
 
                     // Clear existing fields

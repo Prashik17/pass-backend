@@ -9,7 +9,7 @@
   },
   "organizationName" : "Organization",
   "description" : "description",
-  "logoText" : "LogoText",
+  "logoText" : "Logo",
   "foregroundColor" : "rgb(255, 255, 255)",
   "backgroundColor" : "rgb(0, 0, 0)",
   "generic" : {
